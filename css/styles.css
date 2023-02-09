@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'poppins';
+    font-weight: 400;
+    src: url('assets/fonts/poppins-regular-webfont.woff2') format("woff2"), 
+    url('assets/fonts/poppins-regular-webfont.woff') format("woff");
+  }
+  
+  font-family: 'poppins';
+  font-style: italic;
+    font-weight: 500;
+    src: url('assets/fonts/poppins-mediumitalic-webfont.woff2') format("woff2"), 
+    url('assets/fonts/poppins-mediumitalic-webfont.woff') format("woff");
+  }
+
+  font-family: 'poppins';
+    font-weight: 600;
+    src: url('assets/fonts/poppins-semibold-webfont.woff2') format("woff2"), 
+    url('assets/fonts/poppins-semibold-webfont.woff') format("woff");
+  }
+
+  font-family: 'kodchasan';
+  font-weight: 700;
+  src: url('assets/fonts/kodchasan-semibold-webfont.woff2') format("woff2"), 
+  url('assets/fonts/kodchasan-semibold-webfont.woff') format("woff");
+}
+
+font-family: 'kodchasan';
+font-weight: 900;
+src: url('assets/fonts/kodchasan-bold-webfont.woff2') format("woff2"), 
+url('assets/fonts/kodchasan-bold-webfont.woff') format("woff");
+}
+
+:root {
+    --ff-body: "poppins", helvetica, sans-serif;
+    --ff-headings: ;
+  
+    --clr-primary-400: ;
+    --clr-primary700: ;
+  
+    --clr-neutral-100: #ffffff; /* ev hsl colors.. */
+    --clr-neutral-900: #333333;
+  
+    --clr-accent-200: ;
+    --clr-accent-500: ;
+  
+    --fs-headings: clamp(3.5rem, 12vw + 1rem, 12rem);
+    --fs-600: 2rem;
+    --fs-400: 1rem;
+  
+    --padding: ;
+    /* padding-block: min(10vh, 10rem); */
+
+
+    body {
+    font-family: 'poppins';
+       font-size: 1.25rem;
+       line-height: 1.5;
+    }
+
+
+
+    /* media queries */
+  
+    @media (min-width: 40em) {
+      :root {
+        --fs-headings: 7rem;
+        --fs-600: 3rem;
+        --fs-400: 1.125rem;
+      }
+    }
+  }
+  
