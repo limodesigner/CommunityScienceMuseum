@@ -1,72 +1,217 @@
 @font-face {
-    font-family: 'poppins';
-    font-weight: 400;
-    src: url('assets/fonts/poppins-regular-webfont.woff2') format("woff2"), 
-    url('assets/fonts/poppins-regular-webfont.woff') format("woff");
-  }
-  
-  font-family: 'poppins';
-  font-style: italic;
-    font-weight: 500;
-    src: url('assets/fonts/poppins-mediumitalic-webfont.woff2') format("woff2"), 
-    url('assets/fonts/poppins-mediumitalic-webfont.woff') format("woff");
-  }
-
-  font-family: 'poppins';
-    font-weight: 600;
-    src: url('assets/fonts/poppins-semibold-webfont.woff2') format("woff2"), 
-    url('assets/fonts/poppins-semibold-webfont.woff') format("woff");
-  }
-
-  font-family: 'kodchasan';
-  font-weight: 700;
-  src: url('assets/fonts/kodchasan-semibold-webfont.woff2') format("woff2"), 
-  url('assets/fonts/kodchasan-semibold-webfont.woff') format("woff");
+  font-family: "poppins";
+  font-weight: 400;
+  src: url("assets/fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("assets/fonts/poppins-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "poppins";
+  font-weight: 500;
+  src: url("assets/fonts/poppins-light-webfont.woff2") format("woff2"),
+    url("assets/fonts/poppins-light-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "poppins";
+  font-weight: 600;
+  src: url("assets/fonts/poppins-medium-webfont.woff2") format("woff2"),
+    url("assets/fonts/poppins-medium-webfont.woff") format("woff");
 }
 
-font-family: 'kodchasan';
-font-weight: 900;
-src: url('assets/fonts/kodchasan-bold-webfont.woff2') format("woff2"), 
-url('assets/fonts/kodchasan-bold-webfont.woff') format("woff");
+@font-face {
+  font-family: "poppins";
+  font-weight: 800;
+  src: url("assets/fonts/poppins-semibold-webfont.woff2") format("woff2"),
+    url("assets/fonts/poppins-semibold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "kodchasan";
+  font-weight: 900;
+  src: url("assets/fonts/kodchasan-bold-webfont.woff2") format("woff2"),
+    url("assets/fonts/kodchasan-bold-webfont.woff") format("woff");
 }
 
 :root {
-    --ff-body: "poppins", helvetica, sans-serif;
-    --ff-headings: ;
-  
-    --clr-primary-400: ;
-    --clr-primary700: ;
-  
-    --clr-neutral-100: #ffffff; /* ev hsl colors.. */
-    --clr-neutral-900: #333333;
-  
-    --clr-accent-200: ;
-    --clr-accent-500: ;
-  
-    --fs-headings: clamp(3.5rem, 12vw + 1rem, 12rem);
-    --fs-600: 2rem;
-    --fs-400: 1rem;
-  
-    --padding: ;
-    /* padding-block: min(10vh, 10rem); */
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-300: #f9f9f9;
+  --clr-neutral-900: #333333;
+
+  --clr-primary-400: #01359d;
+  --clr-primary-500: #0487d9;
+
+  --clr-accent-600: #ff9a00;
+  --clr-accent-700: #ff7400;
+
+  --clr-semitrans-light: rgba(255, 255, 255, 0.25);
+  --clr-semitrans-dark: rgba(51, 51, 51, 0.5);
+
+  --dropshadow-btn: 0px 2px 4px rgba(51, 51, 51, 0.25);
+  --dropshadow-nav: 2px 0px 8px rgba(51, 51, 51, 0.25);
+
+  --ff-primary: "poppins", Geneva, Verdana, sans-serif;
+  --ff-secondary: "kodchasan", Geneva, Verdana, sans-serif;
+
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-light: 500;
+  --fw-medium: 600;
+  --fw-semibold: 800;
+  --fw-bold: 900;
+
+  --fs-300: 0.875rem; /* breadcrumb */
+  --fs-400: 1.125rem;
+  --fs-500: 1.5rem;
+  --fs-600: 1.75rem;
+  --fs-800: 3rem;
+}
+
+header,
+nav,
+main,
+div,
+section,
+figcaption,
+figure,
+footer {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* -----------GLOBAL STYLES -----------*/
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 2rem 1.25rem;
+  background-color: var(--clr-neutral-100);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-400);
+
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: var(--fs-800);
+  font-weight: var(--fw-light);
+  line-height: 1.4;
+  text-transform: uppercase;
+  padding: 3rem 0;
+}
+
+h2,
+h3 {
+  font-size: var(--fs-500);
+  line-height: 1.4;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
+h2 {
+  font-weight: var(--fw-light);
+}
+
+h3 {
+  font-weight: var(--fw-medium);
+}
+
+h4 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-bold);
+  line-height: 1.4;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+p {
+  padding-bottom: 0.5rem;
+}
+
+a {
+  font-weight: var(--fw-medium);
+  text-decoration: none;
+}
+
+a:link {
+color: var(--clr-neutral-900);
+}
 
 
-    body {
-    font-family: 'poppins';
-       font-size: 1.25rem;
-       line-height: 1.5;
-    }
+a:visited {
+color: var(--crl-neutral-900);
+}
 
-
-
-    /* media queries */
-  
-    @media (min-width: 40em) {
-      :root {
-        --fs-headings: 7rem;
-        --fs-600: 3rem;
-        --fs-400: 1.125rem;
-      }
-    }
+a:hover {
+  color: var(--clr-accent-700);
   }
-  
+
+a:focus {
+color: var(--clr-accent-600);
+}
+
+
+
+.logo-symbol {
+  max-height: 54px;
+  padding-right: 0.5rem;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.icon-home_nav {
+  size: 58px;
+}
+
+.header {
+  display: flex;
+}
+
+.nav-wrapper {
+  list-style: none;
+}
+
+main {
+}
+
+/* ------------------------media queries------------------------ */
+
+@media (min-width: 64em) {
+  :root {
+  }
+
+  body {
+    margin: 3rem 2rem;
+  }
+
+  h4 {
+    font-size: var(--fs-800);
+  }
+}
