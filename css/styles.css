@@ -136,8 +136,11 @@ a:focus {
   }
 }
 
+.logo {
+   z-index: 100;
+}
+
 .logo-symbol {
-  z-index: -1;
   max-height: 54px;
   animation-name: spin;
   animation-duration: 2s;
@@ -147,11 +150,15 @@ a:focus {
 
 .navbar {
   background-color: var(--clr-neutral-100);
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
   box-shadow: var(--dropshadow-nav);
   height: 68px;
+}
+
+.nav_name {
+  display: none;
 }
 
 nav ul {
@@ -355,10 +362,6 @@ footer {
   color: var(--clr-accent-600);
 }
 
-.nav_name {
-  display: none;
-}
-
 /* ------------------------media queries------------------------ */
 
 @media (min-width: 45em) {
@@ -370,6 +373,10 @@ footer {
     width: 100%;
     box-shadow: var(--dropshadow-nav);
     height: 58px;
+  }
+
+  .navbar a {
+    float: right;
   }
 
   .nav_name {
