@@ -147,7 +147,7 @@ a:focus {
 
 .navbar {
   background-color: var(--clr-neutral-100);
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   box-shadow: var(--dropshadow-nav);
