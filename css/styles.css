@@ -136,10 +136,6 @@ a:focus {
   }
 }
 
-.logo {
-   z-index: 100;
-}
-
 .logo-symbol {
   max-height: 54px;
   animation-name: spin;
@@ -149,6 +145,7 @@ a:focus {
 }
 
 .navbar {
+  display: block;
   background-color: var(--clr-neutral-100);
   position: fixed;
   bottom: 0;
