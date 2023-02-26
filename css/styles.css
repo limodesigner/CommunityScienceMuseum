@@ -115,8 +115,7 @@ a:focus {
 }
 
 a:hover {
-  color: var(--clr-neutral-800);
-  /* border-bottom: 1px solid; */
+  color: var(--clr-primary-400);
 }
 
 .active {
@@ -172,7 +171,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--clr-primary-400);
+  color: var(--clr-primary-500);
 }
 
 .menu {
@@ -253,6 +252,7 @@ main {
   grid-template-columns: 1fr;
   background-color: var(--clr-neutral-300);
   border-radius: 12px;
+  margin-bottom: 2rem;
   box-shadow: var(--dropshadow-btn);
   transition: 0.3s;
 }
