@@ -107,11 +107,11 @@ a:link {
 }
 
 a:visited {
-  color: var(--crl-neutral-800);
+  color: var(--clr-neutral-900);
 }
 
 a:focus {
-  color: var(--clr-accent-600);
+  color: var(--clr-primary-400);
 }
 
 a:hover {
@@ -119,7 +119,7 @@ a:hover {
 }
 
 .active {
-  color: var(--clr-accent-700);
+  color: var(--clr-primary-500);
 }
 
 ul {
@@ -133,7 +133,7 @@ li {
 
 /* ----------LOGO & NAVIGATION -------------- */
 .logo {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
 }
 
 .logo-symbol {
@@ -171,7 +171,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--clr-primary-500);
+  color: var(--clr-primary-400);
 }
 
 .menu {
@@ -417,5 +417,9 @@ footer {
     top: 0;
     /* z-index: 10; */
     height: 75px;
+  }
+
+  .hero_image {
+    height: 500px;
   }
 }
