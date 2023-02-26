@@ -38,9 +38,9 @@
   --fs-600: 1.75rem;
   --fs-800: 3rem;
 }
+
 body,
 header,
-nav,
 ul,
 main,
 figure,
@@ -63,6 +63,7 @@ body {
 }
 
 body {
+  max-width: 1440px;
   background-color: var(--clr-neutral-100);
   font-family: var(--ff-primary);
   font-size: var(--fs-400);
@@ -71,7 +72,6 @@ body {
 img,
 svg {
   max-width: 100%;
-  /* height: auto; */
   border-radius: 12px 12px 0 0;
 }
 
@@ -87,10 +87,6 @@ h2 {
   font-weight: 400;
   letter-spacing: 0.14rem;
   text-transform: uppercase;
-}
-
-.subheader {
-  font-size: var(--fs-800);
 }
 
 .subheader_bold {
@@ -110,20 +106,43 @@ a:link {
 }
 
 a:visited {
-  color: var(--crl-neutral-900);
-}
-
-a:hover {
-  color: var(--clr-neutral-800);
-  text-decoration: underline;
+  color: var(--crl-neutral-800);
 }
 
 a:focus {
   color: var(--clr-accent-600);
 }
 
+a:hover {
+  color: var(--clr-neutral-800);
+  /* border-bottom: 1px solid; */
+}
+
 .active {
   color: var(--clr-accent-700);
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+li {
+  text-transform: uppercase;
+}
+
+/* ----------LOGO & NAVIGATION -------------- */
+.logo {
+  padding: 2rem 0 1rem 1rem;
+}
+
+.logo-symbol {
+  max-height: 54px;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  padding-right: 0.5rem;
 }
 
 @keyframes spin {
@@ -136,43 +155,66 @@ a:focus {
   }
 }
 
-.logo-symbol {
-  max-height: 54px;
-  animation-name: spin;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.navbar {
+nav a {
+  color: var(--clr-neutral-900);
+  padding: 0.5rem;
   display: block;
+}
+
+nav a:hover {
+  color: var(--clr-primary-400);
+}
+
+.menu {
   background-color: var(--clr-neutral-100);
+  padding: 0.5rem 0;
   position: fixed;
   bottom: 0;
-  width: 100%;
+width: 100vw;
   box-shadow: var(--dropshadow-nav);
-  height: 68px;
+  height: 72px;
 }
 
-.nav_name {
-  display: none;
+@media screen and (min-width: 48em) {
+  main {
+    padding-top: 24px;
+    margin: auto;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .menu {
+    top: 0;
+    /* z-index: 10; */
+    height: 75px;
+  }
+
+  .desktop-logo {
+    display: none;
+  }
 }
 
-nav ul {
-  text-align: center;
-}
+/*-------------ICONS -----------*/
 
-li {
-  display: inline;
-  text-transform: uppercase;
-}
-
-/*-------------icons -----------*/
 .material-icons {
-  margin: 0.5rem;
-  padding: 2px;
+  margin-bottom: 0.5rem;
   font-size: 36px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .material-icons.home {
@@ -180,6 +222,14 @@ li {
 }
 .material-icons.home:hover {
   background-color: var(--clr-neutral-900);
+  background-image: linear-gradient(
+    to bottom,
+    #01359d,
+    #901f97,
+    #d50078,
+    #fb314b,
+    #ff7400
+  );
   color: var(--clr-neutral-100);
 }
 
@@ -212,16 +262,11 @@ li {
 }
 .material-icons.visit:hover {
   background-color: var(--clr-accent-600);
-  background-image: linear-gradient(
-    to bottom,
-    #01359d,
-    #901f97,
-    #d50078,
-    #fb314b,
-    #ff7400
-  );
+
   color: var(--clr-neutral-100);
 }
+
+/* ------------ HERO & IMAGES ------------*/
 
 figure {
   background-color: var(--clr-neutral-300);
@@ -263,6 +308,8 @@ figure {
   max-width: 100%;
   height: auto;
 }
+
+/* ---------BUTTONS & ANIMATIONS ------------*/
 
 .dots_position {
   margin-top: 0.5rem;
@@ -323,6 +370,8 @@ figure {
   background-color: var(--clr-primary-500);
 }
 
+/* ----------------- AD ---------------*/
+
 .aside {
   background-color: var(--clr-neutral-900);
   background-image: url(../images/tipitrip.jpg);
@@ -339,6 +388,8 @@ figure {
   text-transform: uppercase;
   padding: 6rem 3rem;
 }
+
+/* ----------- FOOTER ---------------*/
 
 footer {
   background-color: var(--clr-neutral-900);
@@ -360,29 +411,3 @@ footer {
 }
 
 /* ------------------------media queries------------------------ */
-
-@media (min-width: 45em) {
-  .navbar {
-    background-color: var(--clr-neutral-100);
-    padding: 0.5rem 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: var(--dropshadow-nav);
-    height: 58px;
-  }
-
-  .navbar a {
-    float: right;
-  }
-
-  .nav_name {
-    display: inline-block;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .nav_icon {
-    display: none;
-  }
-}
