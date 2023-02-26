@@ -251,7 +251,7 @@ nav a:hover {
   border-radius: 12px;
   box-shadow: var(--dropshadow-btn);
   transition: 0.3s;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .hero_image {
