@@ -134,7 +134,7 @@ li {
 
 /* ----------LOGO & NAVIGATION -------------- */
 .logo {
-  padding: 1rem 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .logo-symbol {
@@ -183,6 +183,10 @@ nav a:hover {
   width: 100vw;
   box-shadow: var(--dropshadow-nav);
   height: 62px;
+}
+
+main {
+  margin: 0 1rem;
 }
 
 /*-------------ICONS -----------*/
@@ -394,7 +398,7 @@ footer {
 @media screen and (min-width: 48em) {
   main {
     padding-top: 96px;
-    margin: auto;
+    margin: 0 2rem;
   }
 
   .logo {
