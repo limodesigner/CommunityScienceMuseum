@@ -133,11 +133,11 @@ li {
 
 /* ----------LOGO & NAVIGATION -------------- */
 .logo {
-  padding: 2rem 0 1rem 1rem;
+  padding: 0.5rem;
 }
 
 .logo-symbol {
-  max-height: 54px;
+  max-height: 52px;
   animation-name: spin;
   animation-duration: 2s;
   animation-iteration-count: 1;
@@ -179,7 +179,7 @@ nav a:hover {
   padding: 0.5rem 0;
   position: fixed;
   bottom: 0;
-width: 100vw;
+  width: 100vw;
   box-shadow: var(--dropshadow-nav);
   height: 72px;
 }
@@ -194,6 +194,10 @@ width: 100vw;
     display: none;
   }
 
+  .desktop-logo {
+    display: none;
+  }
+
   .nav-mobile {
     display: none;
   }
@@ -202,10 +206,6 @@ width: 100vw;
     top: 0;
     /* z-index: 10; */
     height: 75px;
-  }
-
-  .desktop-logo {
-    display: none;
   }
 }
 
