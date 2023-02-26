@@ -232,6 +232,16 @@ nav a:hover {
   );
   color: var(--clr-neutral-100);
 }
+.material-icons.home:active {
+  background-color: linear-gradient(
+    to bottom,
+    #01359d,
+    #901f97,
+    #d50078,
+    #fb314b,
+    #ff7400
+  );
+}
 
 .material-icons.signs {
   color: var(--clr-primary-400);
