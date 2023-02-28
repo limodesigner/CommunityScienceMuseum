@@ -91,14 +91,14 @@ h1 {
   margin-left: 1rem;
 }
 
-h2 {
+h2, h3 {
   font-size: var(--fs-500);
   font-weight: 400;
   letter-spacing: 0.14rem;
   text-transform: uppercase;
   padding: 0.5rem;
-}
-
+  }
+  
 .subheader_bold {
   font-weight: 600;
 }
@@ -453,6 +453,10 @@ footer {
 
   h2 {
     margin-left: 2rem;
+  }
+
+  h3 {
+    margin-left: 1rem;
   }
   main {
     background-color: var(--clr-neutral-100);
