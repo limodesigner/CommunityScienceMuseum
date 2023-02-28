@@ -26,8 +26,8 @@
   --clr-neutral-900: #333333;
   --clr-primary-400: #01359d;
   --clr-primary-500: #0487d9;
-  --clr-accent-600: #ff9a00;
-  --clr-accent-700: ##ff5801;
+  --clr-accent-600: #ff5f1f;
+  --clr-accent-700: #ff5801;
   --dropshadow-btn: 0px 2px 4px rgba(51, 51, 51, 0.25);
   --dropshadow-nav: 2px 0px 8px rgba(51, 51, 51, 0.25);
 
@@ -245,18 +245,18 @@ main {
 }
 
 .material-icons.involve {
-  color: #ff5801;
+  color: var(--clr-accent-600);
 }
 .material-icons.involve:hover {
-  background-color: #ff5801;
+  background-color: var(--clr-accent-600);
   color: var(--clr-neutral-100);
 }
 
 .material-icons.visit {
-  color: #ff5f1f;
+  color: var(--clr-accent-700);
 }
 .material-icons.visit:hover {
-  background-color: #ff5f1f;
+  background-color: var(--clr-accent-700);
 
   color: var(--clr-neutral-100);
 }
@@ -285,6 +285,11 @@ main {
 .grid-item {
   border: 2px solid blue;
   padding: 1rem;
+}
+
+.grid-title {
+ 
+  flex-wrap: nowrap;
 }
 
 .container {
