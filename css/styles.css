@@ -504,6 +504,10 @@ footer {
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .grid-item {
+    padding-left: 1rem;
+  }
+
   .aside {
     background-image: url(../images/tipi-event.jpg);
     padding: 10rem;
