@@ -245,10 +245,10 @@ main {
 }
 
 .material-icons.involve {
-  color: var(--clr-accent-700);
+  color: #ff5801;
 }
 .material-icons.involve:hover {
-  background-color: var(--clr-accent-700);
+  background-color: #ff5801;
   color: var(--clr-neutral-100);
 }
 
