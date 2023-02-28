@@ -253,10 +253,10 @@ main {
 }
 
 .material-icons.visit {
-  color: var(--clr-accent-600);
+  color: #cc5c00;
 }
 .material-icons.visit:hover {
-  background-color: var(--clr-accent-600);
+  background-color: #cc5c00;
 
   color: var(--clr-neutral-100);
 }
@@ -328,7 +328,7 @@ main {
   height: auto;
 }
 
-/* ---------BUTTONS & ANIMATIONS ------------*/
+/* -----BUTTONS & ANIMATIONS -----*/
 
 .dot {
   margin-top: 0.6rem;
@@ -387,6 +387,10 @@ main {
   background-color: var(--clr-primary-400);
   color: var(--clr-neutral-100);
   box-shadow: var(--dropshadow-btn);
+}
+
+.button-dark:link {
+  color: var(--clr-neutral-100);
 }
 
 .button-dark:hover {
