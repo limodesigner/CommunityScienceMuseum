@@ -462,7 +462,6 @@ footer {
   .nav-desk {
     padding-top: 0.5rem;
     display: flex;
-    flex-wrap: nowrap;
   }
 
   .nav-desk_navbar {
@@ -471,6 +470,7 @@ footer {
 
   .nav-desk_list {
     display: flex;
+    flex-wrap: nowrap;
     gap: 0.5rem;
   }
 
