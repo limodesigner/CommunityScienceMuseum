@@ -146,6 +146,7 @@ li {
 }
 
 /* ----------LOGO & NAVIGATION -------------- */
+
 .logo {
   padding: 1rem;
 }
@@ -184,7 +185,8 @@ nav a {
   display: block;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   color: var(--clr-primary-400);
 }
 
@@ -303,15 +305,13 @@ main {
   align-items: top;
 }
 
-/* get involved */
-
 .container-wrapper {
-  margin: 1rem;
+  padding: 0.5rem;
 }
 
 .container-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: top;
   flex-wrap: wrap;
 }
@@ -392,6 +392,11 @@ main {
   background-color: var(--clr-primary-500);
 }
 
+.center {
+  display: grid;
+  place-items: center;
+}
+
 /* ----------------- AD ---------------*/
 
 .aside {
@@ -445,9 +450,31 @@ footer {
   h1 {
     margin-left: 2rem;
   }
+
+  h2 {
+    margin-left: 2rem;
+  }
   main {
     background-color: var(--clr-neutral-100);
     padding-top: 76px;
+  }
+
+  .nav-desk {
+    padding-top: 0.5rem;
+    display: flex;
+  }
+
+  .nav-desk_navbar {
+    flex-grow: 1;
+  }
+
+  .nav-desk_list {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .nav-desk_list li:nth-of-type(1) {
+    margin-left: auto;
   }
 
   .logo {
@@ -464,8 +491,7 @@ footer {
 
   .menu {
     top: 0;
-
-    height: 75px;
+    height: 80px;
   }
 
   .card {
@@ -476,8 +502,8 @@ footer {
     height: 500px;
   }
 
-  .container-item {
-    margin: 1rem;
+  .container-wrapper {
+    padding: 0.5rem 2rem;
   }
 
   .news_item {
