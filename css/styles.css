@@ -15,7 +15,7 @@
 @font-face {
   font-family: "kodchasan";
   font-weight: 900;
-  src: url("assets/fonts/kodchasan-bold-webfont.woff2") format("woff2"),
+  src: url("../assets/fonts/kodchasan-bold-webfont.woff2") format("woff2"),
     url("assets/fonts/kodchasan-bold-webfont.woff") format("woff");
 }
 
