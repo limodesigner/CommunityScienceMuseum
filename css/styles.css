@@ -62,11 +62,18 @@ body {
   height: 100%;
 }
 
+html {
+  background-image: url(../images/csm-bg.png);
+  background-repeat: repeat;
+}
+
 body {
   max-width: 1440px;
   background-color: var(--clr-neutral-100);
   font-family: var(--ff-primary);
   font-size: var(--fs-400);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img,
@@ -88,14 +95,20 @@ h2 {
   font-weight: 400;
   letter-spacing: 0.14rem;
   text-transform: uppercase;
+  padding: 0.5rem;
 }
 
 .subheader_bold {
   font-weight: 600;
 }
 
+.subheader_size {
+  font-size: var(--fs-800);
+  font-weight: 300;
+}
+
 p {
-  margin-bottom: 0.5rem;
+  padding: 0.5rem;
 }
 
 a {
@@ -175,6 +188,9 @@ nav a:hover {
 }
 
 .menu {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--clr-neutral-100);
   padding: 0.5rem 0;
   position: fixed;
@@ -186,6 +202,7 @@ nav a:hover {
 
 main {
   margin: 0 1rem;
+  background-color: var(--clr-neutral-100);
 }
 
 /*-------------ICONS -----------*/
@@ -245,9 +262,9 @@ main {
   color: var(--clr-neutral-100);
 }
 
-/* ------------ HERO & IMAGES ------------*/
+/* ------------ CARDS & IMAGES ------------*/
 
-.hero {
+.card {
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--clr-neutral-300);
@@ -257,52 +274,75 @@ main {
   transition: 0.3s;
 }
 
-.hero_image {
+.image {
   width: 100%;
   height: 270px;
   object-fit: cover;
 }
 
-.hero_title {
-  padding-left: 0.5rem;
+.container-news {
+  flex-direction: column;
+  flex: 180px 1 0;
+  background-color: var(--clr-neutral-100);
+  position: relative;
+  height: auto;
 }
 
-figure {
-  background-color: var(--clr-neutral-300);
-  border-radius: 12px;
-  margin: 0;
-  box-shadow: var(--dropshadow-btn);
-}
-
-.news {
+.news_item {
   width: min(100%, 350px);
+}
+
+.title {
+  padding: 0.5rem;
+  text-decoration: underline;
 }
 
 .container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: top;
-
-  padding: 0 0.5rem;
 }
 
-.img_responsive {
-  max-width: 100%;
+/* get involved */
+
+.container-wrapper {
+  /*  border: 1px solid red; */
+}
+
+.container-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: top;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.container-item {
+  flex-direction: column;
+  flex: 180px 1 0;
+  background-color: var(--clr-neutral-300);
+  box-shadow: var(--dropshadow-btn);
+  list-style-type: none;
+  border-radius: 12px;
+  margin: 0.5rem;
+  position: relative;
   height: auto;
 }
 
 /* ---------BUTTONS & ANIMATIONS ------------*/
 
 .dots_position {
-  margin-top: 0.5rem;
+  padding-right: 0.8rem;
+  margin-top: 0.8rem;
 }
 
 .dot {
-  width: 16px;
-  height: 16px;
+  margin-top: 0.6rem;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  /* position: relative; */
+  position: relative;
   animation-name: dot;
   animation-duration: 3s;
   animation-delay: 2;
@@ -323,13 +363,14 @@ figure {
 
 .button {
   font-family: var(--ff-secondary);
-  font-weight: var(--fw-semibold);
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.12rem;
   text-align: center;
   border: 0;
   border-radius: 75px;
   padding: 0.5rem 1rem;
+  margin: 1rem;
 }
 
 .button-light {
@@ -357,7 +398,7 @@ figure {
 
 .aside {
   background-color: var(--clr-neutral-900);
-  background-image: url(../images/tipitrip.jpg);
+  background-image: url(../images/winter-event-large.jpg);
   background-size: cover;
   height: 650px;
   background-position: center bottom;
@@ -366,10 +407,17 @@ figure {
   font-family: var(--ff-secondary);
   font-size: var(--fs-500);
   font-weight: var(--fw-bold);
-  line-height: 1.4;
   letter-spacing: 0.12rem;
   text-transform: uppercase;
-  padding: 6rem 3rem;
+  padding: 6rem 4rem;
+}
+
+.aside p {
+  line-height: 1.2;
+}
+
+.bg-color {
+  background-color: var(--clr-neutral-900);
 }
 
 /* ----------- FOOTER ---------------*/
@@ -393,12 +441,12 @@ footer {
   color: var(--clr-accent-600);
 }
 
-/* ------------------------media queries------------------------ */
+/* -----------media queries----------- */
 
 @media screen and (min-width: 48em) {
   main {
+    background-color: var(--clr-neutral-100);
     padding-top: 96px;
-    margin: 0 2rem;
   }
 
   .logo {
@@ -415,11 +463,28 @@ footer {
 
   .menu {
     top: 0;
-    /* z-index: 10; */
+    z-index: 100;
     height: 75px;
   }
 
-  .hero_image {
+  .card {
+    margin-right: 1.5rem;
+  }
+
+  .image {
     height: 500px;
+  }
+
+  .container-item {
+    margin: 1rem;
+  }
+
+  .news_item {
+    padding: 0.5rem;
+  }
+
+  .aside {
+    background-image: url(../images/tipi-event.jpg);
+    padding: 10rem;
   }
 }
