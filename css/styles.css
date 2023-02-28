@@ -93,7 +93,6 @@ h2 {
   margin-left: 1rem;
 }
 
-
 h3 {
   font-size: var(--fs-500);
   font-weight: 400;
@@ -448,7 +447,6 @@ footer {
     margin-left: 2rem;
   }
 
-
   main {
     background-color: var(--clr-neutral-100);
     padding-top: 86px;
@@ -502,14 +500,9 @@ footer {
     padding: 0.5rem 2rem;
   }
 
-  .news_item {
-    padding: 0.5rem;
-  }
-
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
   }
-  
 
   .aside {
     background-image: url(../images/tipi-event.jpg);
