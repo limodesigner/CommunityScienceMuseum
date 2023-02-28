@@ -1,20 +1,20 @@
 @font-face {
   font-family: "poppins";
-  /* font-weight: 400; */
+  font-weight: 400;
   src: url("assets/fonts/poppins-regular-webfont.woff2") format("woff2"),
     url("assets/fonts/poppins-regular-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "poppins";
-  /* font-weight: 600; */
+  font-weight: 600;
   src: url("assets/fonts/poppins-medium-webfont.woff2") format("woff2"),
     url("assets/fonts/poppins-medium-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "kodchasan";
-  /* font-weight: 900; */
+  font-weight: 900;
   src: url("assets/fonts/kodchasan-bold-webfont.woff2") format("woff2"),
     url("assets/fonts/kodchasan-bold-webfont.woff") format("woff");
 }
@@ -324,11 +324,6 @@ main {
 
 /* ---------BUTTONS & ANIMATIONS ------------*/
 
-.dots_position {
-  padding-right: 0.8rem;
-  margin-top: 0.8rem;
-}
-
 .dot {
   margin-top: 0.6rem;
   width: 14px;
@@ -351,6 +346,11 @@ main {
     top: 0px;
     background-color: var(--clr-primary-500);
   }
+}
+
+.dots_position {
+  padding-right: 0.8rem;
+  margin-top: 0.8rem;
 }
 
 .button {
