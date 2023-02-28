@@ -253,10 +253,10 @@ main {
 }
 
 .material-icons.visit {
-  color: #cc5c00;
+  color: #ff5f1f;
 }
 .material-icons.visit:hover {
-  background-color: #cc5c00;
+  background-color: #ff5f1f;
 
   color: var(--clr-neutral-100);
 }
