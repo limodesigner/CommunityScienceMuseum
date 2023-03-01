@@ -360,10 +360,12 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.12rem;
   text-align: center;
+  width: auto;
   border: 0;
   border-radius: 75px;
   padding: 1rem 1.5rem;
   margin: 1rem;
+  
 }
 
 .button-light {
@@ -393,8 +395,7 @@ main {
 }
 
 .center {
-  display: grid;
-  place-items: center;
+  margin: auto;
 }
 
 /* ------------ grid-box article --------*/
