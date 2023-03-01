@@ -456,8 +456,7 @@ main {
 
 footer {
   background-color: var(--clr-neutral-900);
-  color: var(--clr-primary-500);
-  text-align: center;
+  color: var(--clr-neutral-100);
   padding-bottom: 100px;
 }
 
