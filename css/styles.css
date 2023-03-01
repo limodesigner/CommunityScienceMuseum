@@ -453,6 +453,10 @@ main {
   margin-bottom: 3rem;
 }
 
+.hr {
+  color: var(--clr-neutral-300);
+}
+
 /* ----------- FOOTER ---------------*/
 
 footer {
