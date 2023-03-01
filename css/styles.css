@@ -280,25 +280,22 @@ main {
 
 .grid-container {
   display: grid;
-  grid-template-columns: minmax(180px, 1fr);
-
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .grid-item {
-  border: 2px solid blue;
   padding: 1rem;
 }
 
 .grid-title {
-  / * flex-wrap: nowrap; */
+  flex-wrap: nowrap;
 }
 
 .container-wrapper {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .container {
-  border: 2px solid purple;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -502,20 +499,33 @@ footer {
     height: 500px;
   }
 
-  .container-wrapper {
-    padding: .5rem 2rem;
-  }
-
-  .grid-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   .grid-item {
-    padding-left: 1rem;
+    padding: 3rem 2rem;
+  }
+
+  .container-wrapper {
+    padding: 0 1.5rem;
+  }
+
+  .container-list {
+    gap: 1rem;
   }
 
   .aside {
     background-image: url(../images/tipi-event.jpg);
     padding: 10rem;
   }
+}
+
+@media screen and (min-width: 64.063em) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .container-wrapper {
+    padding: 0.5rem 2rem;
+  }
+
+ 
+
 }
