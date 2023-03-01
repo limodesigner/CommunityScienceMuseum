@@ -106,6 +106,7 @@ h3 {
 }
 
 p {
+  line-height: 1.2;
   margin-bottom: 1rem;
   padding-left: 0.5rem;
 }
@@ -354,18 +355,20 @@ main {
   }
 }
 
+.center {
+  display: flex;
+  place-content: center;
+}
+
 .button {
   font-family: var(--ff-secondary);
   font-size: var(--fs-500);
   text-transform: uppercase;
   letter-spacing: 0.12rem;
-  text-align: center;
-  width: auto;
   border: 0;
   border-radius: 75px;
   padding: 1rem 1.5rem;
-  margin: 1rem;
-  
+  margin: 1.5rem;
 }
 
 .button-light {
@@ -377,6 +380,7 @@ main {
 
 .button-light:hover {
   background-color: var(--clr-accent-700);
+  color: var(--clr-neutral-100);
   box-shadow: var(--dropshadow-btn);
 }
 
@@ -386,16 +390,13 @@ main {
   box-shadow: var(--dropshadow-btn);
 }
 
-.button-dark:link {
+.button-dark:hover {
+  background-color: var(--clr-primary-500);
   color: var(--clr-neutral-100);
 }
 
-.button-dark:hover {
-  background-color: var(--clr-primary-500);
-}
-
-.center {
-  margin: auto;
+.button-dark:visited {
+  color: var(--clr-neutral-100);
 }
 
 /* ------------ grid-box article --------*/
@@ -406,31 +407,9 @@ main {
   gap: 1rem;
 }
 
-/* ----------------- AD ---------------*/
-
-.bg-color {
+/* --------------- AD ASIDE--------------*/
+.aside {
   background-color: var(--clr-neutral-900);
-}
-
-/* ----------- FOOTER ---------------*/
-
-footer {
-  background-color: var(--clr-neutral-900);
-  color: var(--clr-neutral-100);
-  text-align: center;
-  padding-bottom: 100px;
-}
-
-.footer a {
-  color: var(--clr-neutral-100);
-}
-
-.footer a:hover {
-  color: var(--clr-accent-700);
-}
-
-.footer a.active {
-  color: var(--clr-accent-600);
 }
 
 .ad {
@@ -470,7 +449,32 @@ footer {
 }
 
 .ad-space {
-margin-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* ----------- FOOTER ---------------*/
+
+footer {
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-accent-600);
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.bg-color {
+  background-color: var(--clr-neutral-900);
+}
+
+.footer a {
+  color: var(--clr-neutral-100);
+}
+
+.footer a:hover {
+  color: var(--clr-accent-700);
+}
+
+.footer a.active {
+  color: var(--clr-accent-600);
 }
 
 /* -----------media queries----------- */
@@ -542,6 +546,10 @@ margin-bottom: 3rem;
     gap: 1rem;
   }
 
+  .button {
+    margin: 2rem;
+  }
+
   .ad {
     font-size: var(--fs-800);
   }
@@ -599,5 +607,4 @@ margin-bottom: 3rem;
     padding-right: 20rem;
     padding-left: 20rem;
   }
-
 }
