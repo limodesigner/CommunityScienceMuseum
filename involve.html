@@ -22,7 +22,7 @@
     <div class="logo">
       <img src="images/logo-csm-web.png" alt="CSM logo" class="logo-symbol" aria-hidden="true" />
       <a href="index.html">
-        <img src="images/svg/csm-logo-text.svg" alt="Welcome to CSM" class="desktop-logo" /></a>
+        <img src="images/svg/csm-logo-text.svg" alt="Welcome to CSM" class="desktop-logo" aria-hidden="true" /></a>
     </div>
 
     <nav class="menu">
@@ -55,9 +55,6 @@
       </ul>
 
       <div class="nav-desk">
-        <a href="index.html">
-          <img src="images/logo-csm-web.png" alt="CSM logo" class="logo-symbol" aria-hidden="true">
-          <img src="images/svg/csm-logo-text.svg" alt="Welcome to the homepage of the Community Science Museum"></a>
         <div class="nav-desk_navbar">
           <ul class="nav-desk_list">
             <li><a href="exhibit.html">
@@ -244,8 +241,10 @@
             <form action="form-contact.php" method="POST">
               <fieldset>
                 <legend title="Contact form"></legend>
-                <label for="contact_email" aria-label="Type your email in the form"><span class="hide">E-mail address</span></label>
-                <input type="email" name="email" id="contact_email" class="form__input" required placeholder="Enter your email"/><br>
+                <label for="contact_email" aria-label="Type your email in the form"><span class="hide">E-mail
+                    address</span></label>
+                <input type="email" name="email" id="contact_email" class="form__input" required
+                  placeholder="Enter your email" /><br>
                 <input type="submit" id="submit" value="Sign up" class="button button-dark " />
               </fieldset>
             </form>
@@ -255,45 +254,55 @@
     </div>
   </aside>
 
-  <footer class="footer">
-    <div class="container-wrapper">
-      <div class="container-list">
-
-        <div class="container-item bg-color">
-          <h3 class="subheader_bold">Opening hours</h3>
-          <p>10:00 am - 19:00</p>
-          <p>Tuesday-wednesday</p>
-          <p>saturday-sunday</p>
-          <p>9:00 - 19:00</p>
-          <p>Friday</p>
-          <p>Closed</p>
-          <p>Monday</p>
-        </div>
-
-
-        <div class="container-item bg-color">
-          <h3 class="subheader_bold">Get Involved</h3>
-          <ul class="footer-nav">
-            <li><a href="involve.html">Support us</a></li>
-            <li><a href="involve.html">Volunteer</a></li>
-            <li><a href="involve.html">Internship</a></li>
-            <li><a href="visit.html">Contact us</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="container-item bg-color">
-            <p> <img src="images/svg/icon-instagram.svg" alt="Click to visit our Instagram-page.">
-              <img src="images/svg/icon-facebook.svg" alt="Click to visit our Facebook-page.">
-            </p>
-            <a href="index.html"><img src="images/svg/icon-logo-footer.svg" alt="Link to CSM homepage" /></a><img
-              src="images/svg/logo-footer.svg" alt="Welcome to the homepage of the Community Science Museum"
-              class="logo-text">
-          </div>
-        </div>
-      </div>
+  <div class="footer-list">
+    <div class="footer-item">
+      <table class="footer-hours">
+        <caption class="caption footer-header">OPENING HOURS</caption>
+        <tr>
+        <tr>
+          <th>Tuesday, Wednesday, Thursday</th>
+          <td>10:00 - 16:00</td>
+        </tr>
+        <tr>
+          <th>Friday , Saturday, Sunday</th>
+          <td>9:00 - 16:00</td>
+        </tr>
+        <tr>
+          <th>Monday</th>
+          <td>Closed</td>
+        </tr>
+        </tr>
+      </table>
     </div>
 
+    <div class="footer-item">
+      <h3 class="footer-header">Get Involved</h3>
+      <ul class="footer-nav">
+        <li><a href="involve.html">Support us</a></li>
+        <li><a href="involve.html">Volunteer</a></li>
+        <li><a href="involve.html">Internship</a></li>
+        <li><a href="visit.html">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-item">
+      <div class="footer-logo">
+        <a href="index.html"><img src="images/svg/icon-logo-footer.svg" alt="Link to CSM homepage"
+            class="logo-symbol" /><img src="images/svg/logo-footer.svg"
+            alt="Welcome to the homepage of the Community Science Museum"> </a>
+      </div>
+
+      <div>
+        <a href="#"><img src="images/svg/icon-instagram.svg" alt="Click to visit our Instagram-page." class="social">
+        </a>
+        <a href="#"></a><img src="images/svg/icon-facebook.svg" alt="Click to visit our Facebook-page." class="social">
+        </a>
+        <p class="copyright">Copyright &copy; CSM 2023
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
   </footer>
 
 </body>
