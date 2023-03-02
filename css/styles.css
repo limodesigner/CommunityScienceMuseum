@@ -386,7 +386,7 @@ main {
   color: var(--clr-neutral-900);
 }
 
-.button-dark a {
+.button-dark li {
   color: var(--clr-neutral-100);
 }
 
