@@ -97,6 +97,7 @@ h2 {
 h3 {
   font-size: var(--fs-600);
   font-weight: 400;
+  line-height: 1.2;
   text-transform: uppercase;
   padding: 0.5rem;
 }
@@ -505,7 +506,8 @@ textarea:focus {
 .footer-list {
   background-color: var(--clr-neutral-900);
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-items: center;
   align-items: center;
 }
 
@@ -644,6 +646,10 @@ td {
   .ad-text {
     padding-right: 12rem;
     padding-left: 12rem;
+  }
+
+  .footer-list {
+    justify-content: space-evenly;
   }
 }
 
