@@ -90,7 +90,7 @@ h2 {
   font-weight: 300;
   letter-spacing: 0.13rem;
   text-transform: uppercase;
-  padding-top: 1rem;
+padding-top: 1rem;
   margin-left: 1rem;
 }
 
@@ -98,7 +98,7 @@ h3 {
   font-size: var(--fs-600);
   font-weight: 400;
   text-transform: uppercase;
-  padding: 0.5rem;
+  padding: 0.5rem; 
 }
 
 .subheader_bold {
@@ -330,13 +330,11 @@ main {
 /* -----BUTTONS & ANIMATIONS -----*/
 
 .dot {
-  /* margin-top: 0.6rem; */
   width: 14px;
   height: 14px;
   border-radius: 50%;
   float: left;
   padding-left: 1rem;
-  /* position: relative; */
   animation-name: dot;
   animation-duration: 3s;
   animation-delay: 2;
@@ -351,7 +349,7 @@ main {
   }
   to {
     top: 0px;
-    background-color: var(--clr-primary-500);
+    background-color: var(--clr-accent-700);
   }
 }
 
@@ -374,7 +372,6 @@ main {
 .button-light {
   background-color: var(--clr-neutral-100);
   color: var(--clr-neutral-900);
-  font-weight: bold;
   border: 2px solid var(--clr-accent-700);
 }
 
