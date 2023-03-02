@@ -612,6 +612,10 @@ textarea:focus {
   align-items: center;
 }
 
+.footer-item {
+  margin-inline: auto;
+}
+
 .caption {
   caption-side: top;
 }
