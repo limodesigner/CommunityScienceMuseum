@@ -402,7 +402,7 @@ main {
   color: var(--clr-neutral-100);
 }
 
-/* ------------ grid-box article --------*/
+/* ------------ GRID ARTICLE --------*/
 
 .grid-box {
   margin: 1rem;
@@ -614,10 +614,6 @@ td {
 
   .container-list {
     gap: 1rem;
-  }
-
-  .button {
-    margin: 2rem;
   }
 
   .ad {
