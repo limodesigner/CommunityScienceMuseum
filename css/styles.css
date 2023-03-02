@@ -90,7 +90,7 @@ h2 {
   font-weight: 300;
   letter-spacing: 0.13rem;
   text-transform: uppercase;
-padding-top: 1rem;
+  padding-top: 1rem;
   margin-left: 1rem;
 }
 
@@ -98,7 +98,7 @@ h3 {
   font-size: var(--fs-600);
   font-weight: 400;
   text-transform: uppercase;
-  padding: 0.5rem; 
+  padding: 0.5rem;
 }
 
 .subheader_bold {
@@ -366,7 +366,7 @@ main {
   border: 0;
   border-radius: 75px;
   padding: 1rem 1.5rem;
-  margin: 1.5rem;
+  margin: 2rem 0;
 }
 
 .button-light {
@@ -385,7 +385,6 @@ main {
 .button-light:visited {
   color: var(--clr-neutral-900);
 }
-
 
 .button-dark {
   background-color: var(--clr-primary-400);
@@ -409,6 +408,10 @@ main {
   margin: 1rem;
   display: grid;
   gap: 1rem;
+}
+
+.hr {
+  color: var(--clr-neutral-300);
 }
 
 /* --------------- AD ASIDE--------------*/
@@ -439,10 +442,10 @@ main {
   background-image: url(../images/subscribe-small.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: right top;
   color: var(--clr-neutral-900);
-  padding-top: 300px;
-  padding-bottom: 250px;
+  text-align: end;
+  padding: 450px 2rem 50px 3rem;
 }
 
 .ad-text {
@@ -453,11 +456,31 @@ main {
 }
 
 .ad-space {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
-.hr {
-  color: var(--clr-neutral-300);
+/* -------------FORMS --------------- */
+.form__input {
+  padding: 0.5rem;
+  border: solid 2px var(--clr-primary-400);
+  border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+}
+
+/*forms focus styles*/
+input:focus,
+textarea:focus {
+  outline: solid 1px var(--clr-primary-400);
+  border-color: var(--clr-primary-500);
+  background-color: var(--clr-neutral-300);
+  box-shadow: 0 0 5px var(--clr-neutral-900);
+}
+
+.hide {
+  display: none;
 }
 
 /* ----------- FOOTER ---------------*/
@@ -607,6 +630,8 @@ td {
 
   .ad_subscribe {
     background-image: url(../images/subscribe.jpg);
+    background-position: center center;
+    padding: 500px 8rem 100px 20rem;
   }
 
   .ad-text {
