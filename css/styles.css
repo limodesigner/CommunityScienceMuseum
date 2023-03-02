@@ -146,6 +146,18 @@ li {
 }
 
 /* ----------LOGO & NAVIGATION -------------- */
+nav {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--clr-neutral-100);
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  width: 100vw;
+  box-shadow: var(--dropshadow-nav);
+  height: 58px;
+}
 
 main {
   background-color: var(--clr-neutral-100);
@@ -153,7 +165,7 @@ main {
 
 .logo {
   padding: 1rem;
-  z-index: 100;
+  z-index: 200;
 }
 
 .logo-symbol {
@@ -193,19 +205,6 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: var(--clr-primary-400);
-}
-
-.menu {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--clr-neutral-100);
-  position: fixed;
-  z-index: 5;
-  bottom: 0;
-  width: 100vw;
-  box-shadow: var(--dropshadow-nav);
-  height: 58px;
 }
 
 /*-------------ICONS -----------*/
@@ -553,13 +552,13 @@ td {
   text-align: center;
 }
 
-.nav-name {
-  display: none;
+.hide-name {
+  visibility: hidden;
 }
 
 /* -----------media queries----------- */
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 52em) {
   h1,
   h2 {
     margin-left: 2rem;
@@ -567,17 +566,17 @@ td {
 
   main {
     background-color: var(--clr-neutral-100);
-    padding-top: 86px;
+    padding-top: 56px;
   }
 
-  .menu {
+  nav {
     top: 0;
-    height: 80px;
+    height: 100px;
   }
 
-  .nav-name {
-    visibility: visible;
-  }
+ .hide-icon {
+  visibility: hidden;
+ }
 
   .nav-icon {
     display: none;
