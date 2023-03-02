@@ -147,8 +147,13 @@ li {
 
 /* ----------LOGO & NAVIGATION -------------- */
 
+main {
+  background-color: var(--clr-neutral-100);
+}
+
 .logo {
   padding: 1rem;
+  z-index: 100;
 }
 
 .logo-symbol {
@@ -196,15 +201,11 @@ nav a:focus {
   margin-right: auto;
   background-color: var(--clr-neutral-100);
   position: fixed;
-  z-index: 100;
+  z-index: 5;
   bottom: 0;
   width: 100vw;
   box-shadow: var(--dropshadow-nav);
   height: 58px;
-}
-
-main {
-  background-color: var(--clr-neutral-100);
 }
 
 /*-------------ICONS -----------*/
@@ -232,34 +233,34 @@ main {
 }
 
 .material-icons.signs {
-  color: var(--clr-primary-400);
-}
-.material-icons.signs:hover {
-  background-color: var(--clr-primary-400);
-  color: var(--clr-neutral-100);
-}
-
-.material-icons.events {
-  color: var(--clr-primary-500);
-}
-.material-icons.events:hover {
-  background-color: var(--clr-primary-500);
-  color: var(--clr-neutral-100);
-}
-
-.material-icons.involve {
   color: var(--clr-accent-600);
 }
-.material-icons.involve:hover {
+.material-icons.signs:hover {
   background-color: var(--clr-accent-600);
   color: var(--clr-neutral-100);
 }
 
-.material-icons.visit {
+.material-icons.events {
   color: var(--clr-accent-700);
 }
-.material-icons.visit:hover {
+.material-icons.events:hover {
   background-color: var(--clr-accent-700);
+  color: var(--clr-neutral-100);
+}
+
+.material-icons.involve {
+  color: var(--clr-primary-400);
+}
+.material-icons.involve:hover {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+}
+
+.material-icons.visit {
+  color: var(--clr-primary-500);
+}
+.material-icons.visit:hover {
+  background-color: var(--clr-primary-500);
   color: var(--clr-neutral-100);
 }
 
@@ -386,7 +387,8 @@ main {
   color: var(--clr-neutral-900);
 }
 
-.button-dark li {
+a.button-dark {
+  color: var(--clr-neutral-100);
   color: var(--clr-neutral-100);
 }
 
@@ -551,6 +553,10 @@ td {
   text-align: center;
 }
 
+.nav-name {
+  display: none;
+}
+
 /* -----------media queries----------- */
 
 @media screen and (min-width: 48em) {
@@ -564,6 +570,19 @@ td {
     padding-top: 86px;
   }
 
+  .menu {
+    top: 0;
+    height: 80px;
+  }
+
+  .nav-name {
+    visibility: visible;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
   .nav-desk {
     padding-top: 0.5rem;
     display: flex;
@@ -571,6 +590,7 @@ td {
 
   .nav-desk_navbar {
     flex-grow: 1;
+    padding: 2rem;
   }
 
   .nav-desk_list {
@@ -583,21 +603,8 @@ td {
     margin-left: auto;
   }
 
-  .logo {
-    display: none;
-  }
-
-  .desktop-logo {
-    display: none;
-  }
-
   .nav-mobile {
     display: none;
-  }
-
-  .menu {
-    top: 0;
-    height: 80px;
   }
 
   .card {
