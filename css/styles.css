@@ -260,7 +260,6 @@ main {
 }
 .material-icons.visit:hover {
   background-color: var(--clr-accent-700);
-
   color: var(--clr-neutral-100);
 }
 
@@ -270,7 +269,6 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--clr-neutral-300);
-  border-radius: 12px;
   margin: 1rem;
   box-shadow: var(--dropshadow-btn);
 }
@@ -305,6 +303,7 @@ main {
 }
 
 .readmore {
+  cursor: pointer;
   text-decoration: underline;
   padding-left: 0.5rem;
 }
@@ -379,11 +378,17 @@ main {
   border: 2px solid var(--clr-accent-700);
 }
 
-.button-light:hover {
+.button-light:hover,
+.button-light:focus {
   background-color: var(--clr-accent-700);
   color: var(--clr-neutral-100);
   box-shadow: var(--dropshadow-btn);
 }
+
+.button-light:visited {
+  color: var(--clr-neutral-900);
+}
+
 
 .button-dark {
   background-color: var(--clr-primary-400);
@@ -391,7 +396,8 @@ main {
   box-shadow: var(--dropshadow-btn);
 }
 
-.button-dark:hover {
+.button-dark:hover,
+.button-dark:focus {
   background-color: var(--clr-primary-500);
   color: var(--clr-neutral-100);
 }
