@@ -386,23 +386,25 @@ main {
   color: var(--clr-neutral-900);
 }
 
-.button-dark a:link {
+.button-dark a {
   color: var(--clr-neutral-100);
 }
 
 .button-dark {
   background-color: var(--clr-primary-400);
-  
+  color: var(--clr-neutral-100);
   box-shadow: var(--dropshadow-btn);
 }
 
 .button-dark:hover,
 .button-dark:focus {
   background-color: var(--clr-primary-500);
- 
+  color: var(--clr-neutral-100);
 }
 
-
+.button-dark:visited {
+  color: var(--clr-neutral-100);
+}
 
 /* ------------ GRID ARTICLE --------*/
 
