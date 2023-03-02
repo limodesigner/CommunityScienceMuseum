@@ -152,7 +152,7 @@ nav {
   margin-right: auto;
   background-color: var(--clr-neutral-100);
   position: fixed;
-  z-index: 100;
+  z-index: 10;
   bottom: 0;
   width: 100vw;
   box-shadow: var(--dropshadow-nav);
@@ -165,7 +165,8 @@ main {
 
 .logo {
   padding: 1rem;
-  z-index: 200;
+  position: relative;
+  z-index: 20;
 }
 
 .logo-symbol {
@@ -503,7 +504,7 @@ footer {
   gap: 2rem;
 }
 
-.footer_header {
+.footer-header {
   font-family: var(--ff-secondary);
   font-size: 28px;
   color: var(--clr-neutral-100);
@@ -574,9 +575,9 @@ td {
     height: 100px;
   }
 
- .hide-icon {
-  visibility: hidden;
- }
+  .hide-icon {
+    visibility: hidden;
+  }
 
   .nav-icon {
     display: none;
