@@ -490,6 +490,107 @@ textarea:focus {
   display: none;
 }
 
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.info-item {
+  flex: 100%;
+  padding: 1rem;
+}
+
+.info-item_contact {
+  padding: 1rem;
+}
+
+.booking {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.booking-item {
+  flex-direction: column;
+  flex: 180px 1 0;
+  list-style-type: none;
+  border-radius: 12px;
+  margin: 0.5rem;
+  position: relative;
+  height: auto;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: var(--clr-neutral-100);
+  border: 3px solid var(--clr-primary-400);
+  border-radius: 3px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: var(--clr-neutral-100);
+  border: 3px solid var(--clr-primary-400);
+  border-radius: 3px;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: var(--clr-primary-400);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--clr-neutral-100);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.about {
+  background-color: var(--clr-neutral-100);
+  margin-bottom: 2rem;
+}
+
 /* ----------- FOOTER ---------------*/
 
 .footer-header {
@@ -646,6 +747,21 @@ td {
   .ad-text {
     padding-right: 12rem;
     padding-left: 12rem;
+  }
+
+  .info {
+    flex: 25%;
+  }
+
+  .info-item {
+    flex-direction: column;
+    flex: 25%;
+    padding: 0 2rem;
+  }
+
+  .booking {
+    padding: 2rem;
+    gap: 2rem;
   }
 
   .footer-list {
