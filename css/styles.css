@@ -602,7 +602,7 @@ textarea:focus {
 
 /* ----------- FOOTER ---------------*/
 
-footer {
+.footer {
   background-color: var(--clr-neutral-900);
   color: var(--clr-neutral-100);
 }
@@ -644,6 +644,10 @@ td {
 
 .footer-nav {
   line-height: 2;
+}
+
+.footer-nav a:link {
+  color: hotpink;
 }
 
 .footer-nav a:hover,
