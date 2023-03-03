@@ -647,12 +647,12 @@ td {
 }
 
 .footer-nav a:link {
-  color: var(--clr-accent-700);
+  color: var(--clr-neutral-100);
 }
 
 .footer-nav a:hover,
 .footer-nav a:focus {
-  color: var(--clr-accent-600);
+  color: #ff6700;
 }
 
 .footer-nav a:visited {
