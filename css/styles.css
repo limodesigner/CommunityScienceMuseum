@@ -618,6 +618,12 @@ textarea:focus {
   margin-inline: auto;
 }
 
+.footer-header {
+  font-family: var(--ff-secondary);
+  font-size: 28px;
+  padding-top: 2rem;
+}
+
 .caption {
   caption-side: top;
 }
@@ -631,10 +637,8 @@ td {
   padding: 0.5rem;
 }
 
-.footer-header {
-  font-family: var(--ff-secondary);
-  font-size: 28px;
-  padding-top: 2rem;
+.footer-nav {
+  line-height: 2;
 }
 
 .footer-nav ul {
@@ -642,12 +646,8 @@ td {
   color: var(--clr-neutral-100);
 }
 
-.footer-nav {
-  line-height: 2;
-}
-
 .footer-nav a:link {
-  color: hotpink;
+  color: var(--clr-accent-700);
 }
 
 .footer-nav a:hover,
@@ -671,7 +671,6 @@ td {
   color: var(--clr-neutral-100);
   margin: 0.75rem 0 0 0;
   padding: 2rem;
-  font-weight: lighter;
   text-align: center;
 }
 
