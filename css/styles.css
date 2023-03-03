@@ -647,7 +647,7 @@ footer a {
 
 .footer-nav a:hover,
 .footer-nav a:focus {
-  color: var(--clr-neutral-300);
+  color: var(--clr-accent-700);
 }
 
 .footer-nav a:visited {
