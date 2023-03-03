@@ -645,12 +645,12 @@ footer a {
   color: var(--clr-neutral-100);
 }
 
-footer a:hover,
-footer a:focus {
+.footer-nav a:hover,
+.footer-nav a:focus {
   color: var(--clr-neutral-300);
 }
 
-footer a:visited {
+.footer-nav a:visited {
   color: var(--clr-neutral-100);
 }
 
