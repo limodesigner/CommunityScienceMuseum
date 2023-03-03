@@ -639,18 +639,18 @@ td {
   line-height: 2;
 }
 
-.footer-nav a {
+footer a {
   font-family: var(--ff-primary);
   font-size: var(--fs-400);
   color: var(--clr-neutral-100);
 }
 
-.footer-nav a:hover,
-.footer-nav a:focus {
+footer a:hover,
+footer a:focus {
   color: var(--clr-accent-700);
 }
 
-.footer-nav a:visited {
+footer a:visited {
   color: var(--clr-accent-600);
 }
 
