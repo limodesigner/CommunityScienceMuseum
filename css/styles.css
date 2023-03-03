@@ -653,6 +653,7 @@ td {
 .footer-nav a:hover,
 .footer-nav a:focus {
   color: #ff6700;
+  text-decoration: underline;
 }
 
 .footer-nav a:visited {
