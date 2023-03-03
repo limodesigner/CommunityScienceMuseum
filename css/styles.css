@@ -151,23 +151,24 @@ nav {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--clr-neutral-100);
-  position: fixed;
-  z-index: 10;
-  bottom: 0;
-  width: 100vw;
-  box-shadow: var(--dropshadow-nav);
-  height: 58px;
 }
 
-.hide-name {
-  visibility: hidden;
+.active {
+  color: var(--clr-primary-400);
+}
+
+@media screen and (max-width: 51.99em) {
+  .desktop {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
 }
 
 .logo {
   padding: 1rem;
-  position: relative;
-  z-index: 20;
 }
 
 .logo-symbol {
@@ -176,7 +177,6 @@ nav {
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  padding-right: 0.5rem;
 }
 
 @keyframes spin {
@@ -189,13 +189,24 @@ nav {
   }
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+/* navig */
+
+.navbar {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  width: 100vw;
+  background-color: var(--clr-neutral-100);
+  box-shadow: var(--dropshadow-nav);
+  height: 58px;
+}
+
+.mobile {
+  padding: 0 0.2rem;
 }
 
 nav a {
@@ -207,11 +218,6 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: var(--clr-primary-400);
-}
-
-main {
-  background-color: var(--clr-neutral-100);
-  padding-top: 1rem;
 }
 
 /*-------------ICONS -----------*/
@@ -271,6 +277,15 @@ main {
 }
 
 /* ------------ CARDS & IMAGES ------------*/
+
+main {
+  background-color: var(--clr-neutral-100);
+  padding-top: 1rem;
+}
+
+.logo-main {
+  padding: 0 1rem;
+}
 
 .card {
   display: grid;
@@ -687,40 +702,29 @@ th {
     margin-left: 2rem;
   }
 
-  nav {
+  .logo {
+    padding: 0 2rem;
+  }
+
+  main {
+    padding-top: 110px;
+  }
+
+  .navbar {
     top: 0;
-    height: 100px;
+    padding-right: 2rem;
+    height: 96px;
   }
 
-  .hide-icon {
-    visibility: hidden;
-  }
-
-  .nav-icon {
-    display: none;
-  }
-
-  .nav-desk {
-    padding-top: 0.5rem;
-    display: flex;
-  }
-
-  .nav-desk_navbar {
-    flex-grow: 1;
-    padding: 2rem;
-  }
-
-  .nav-desk_list {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 0.5rem;
-  }
-
-  .nav-desk_list li:nth-of-type(1) {
+  .navbar li:nth-of-type(2) {
     margin-left: auto;
   }
 
-  .nav-mobile {
+  .mobile {
+    display: none;
+  }
+
+  .logo-main {
     display: none;
   }
 
