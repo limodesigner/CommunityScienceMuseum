@@ -602,8 +602,20 @@ textarea:focus {
 
 /* ----------- FOOTER ---------------*/
 
-.footer-list {
+footer {
   background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+}
+
+footer ul {
+  background-color: var(--clr-neutral-900);
+}
+
+.footer-nav li {
+  color: #e9967a;
+}
+
+.footer-list {
   display: flex;
   flex-wrap: wrap;
   justify-items: center;
@@ -630,19 +642,11 @@ td {
 .footer-header {
   font-family: var(--ff-secondary);
   font-size: 28px;
-  color: var(--clr-neutral-100);
   padding-top: 2rem;
 }
 
 .footer-nav {
-  color: var(--clr-neutral-100);
   line-height: 2;
-}
-
-footer a {
-  font-family: var(--ff-primary);
-  font-size: var(--fs-400);
-  color: var(--clr-neutral-100);
 }
 
 .footer-nav a:hover,
