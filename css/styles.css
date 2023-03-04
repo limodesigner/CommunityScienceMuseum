@@ -293,7 +293,7 @@ main {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .grid-item {
@@ -302,6 +302,10 @@ main {
 
 .grid-title {
   flex-wrap: nowrap;
+}
+
+.padding {
+  padding: 1rem 0 0;
 }
 
 .container-wrapper {
@@ -728,6 +732,10 @@ th {
 
   .grid-item {
     padding: 3rem 2rem;
+  }
+
+  .padding {
+    padding: 3rem 0 0 0;
   }
 
   .container-wrapper {
