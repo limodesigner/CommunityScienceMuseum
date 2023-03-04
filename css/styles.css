@@ -235,34 +235,34 @@ nav a:focus {
 }
 
 .material-icons.signs {
-  color: var(--clr-accent-600);
-}
-.material-icons.signs:hover {
-  background-color: var(--clr-accent-600);
-  color: var(--clr-neutral-100);
-}
-
-.material-icons.events {
-  color: var(--clr-accent-700);
-}
-.material-icons.events:hover {
-  background-color: var(--clr-accent-700);
-  color: var(--clr-neutral-100);
-}
-
-.material-icons.involve {
   color: var(--clr-primary-400);
 }
-.material-icons.involve:hover {
+.material-icons.signs:hover {
   background-color: var(--clr-primary-400);
   color: var(--clr-neutral-100);
 }
 
-.material-icons.visit {
+.material-icons.events {
   color: var(--clr-primary-500);
 }
-.material-icons.visit:hover {
+.material-icons.events:hover {
   background-color: var(--clr-primary-500);
+  color: var(--clr-neutral-100);
+}
+
+.material-icons.involve {
+  color: var(--clr-accent-600);
+}
+.material-icons.involve:hover {
+  background-color: var(--clr-accent-600);
+  color: var(--clr-neutral-100);
+}
+
+.material-icons.visit {
+  color: var(--clr-accent-700);
+}
+.material-icons.visit:hover {
+  background-color: var(--clr-accent-700);
   color: var(--clr-neutral-100);
 }
 
