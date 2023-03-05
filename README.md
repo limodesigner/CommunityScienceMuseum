@@ -20,7 +20,7 @@ Comming soon!
 
 - HTML
 - CSS
-
+<br>
 - Trello for planning
 - Adobe Photoshop
 - Adobe Color
