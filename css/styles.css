@@ -49,9 +49,7 @@ footer {
   display: block;
 }
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -78,7 +76,6 @@ body {
 
 img,
 svg {
-  height: auto;
   max-width: 100%;
   border-radius: 12px 12px 0 0;
 }
@@ -113,6 +110,7 @@ p {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
   font-weight: 600;
 }
@@ -144,10 +142,6 @@ li {
 
 /* ----------LOGO & NAVIGATION -------------- */
 
-.active a {
-  color: var(--clr-primary-400);
-}
-
 @media screen and (max-width: 51.99em) {
   .desktop {
     display: none;
@@ -176,8 +170,6 @@ li {
   }
 }
 
-/* navig */
-
 .navbar {
   max-width: 1440px;
   margin-left: auto;
@@ -195,10 +187,6 @@ li {
   height: 58px;
 }
 
-.mobile {
-  padding: 0 0.2rem;
-}
-
 nav a {
   color: var(--clr-neutral-900);
   padding: 0.5rem;
@@ -208,6 +196,14 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: var(--clr-primary-400);
+}
+
+.active a {
+  color: var(--clr-primary-400);
+}
+
+.mobile {
+  padding: 0 0.2rem;
 }
 
 /*-------------ICONS -----------*/
@@ -320,7 +316,6 @@ main {
 }
 
 .readmore {
-  cursor: pointer;
   text-decoration: underline;
   padding-left: 0.5rem;
 }
@@ -545,18 +540,16 @@ textarea:focus {
   position: relative;
   padding-left: 2rem;
   margin-bottom: 1rem;
-  cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
+/* Hide browsers default checkbox */
 .checkbox-container input {
   position: absolute;
   opacity: 0;
-  cursor: pointer;
   height: 0;
   width: 0;
 }
@@ -593,14 +586,14 @@ textarea:focus {
 }
 
 .checkbox-container .checkmark:after {
-  left: 9px;
+  left: 5px;
   top: 5px;
   width: 5px;
-  height: 10px;
+  height: 5px;
   border: solid var(--clr-neutral-100);
   border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(45deg);
 }
 
