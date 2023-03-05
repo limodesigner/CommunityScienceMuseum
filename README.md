@@ -49,26 +49,9 @@ Other:
 
 - https://mycolor.space/
 
-## Some of the Semester project 1's requirements
-
-The site must have at least 4-6 pages.
-
-Compositional principles, typography, and colour schemes must be considered.
-
-Your HTML should be semantic and neatly indented.
-
-The site should use external CSS style sheets which follow the DRY principle.
-
-The site should download quickly and not be overly “heavy”. Images should be at most 200kb.
-
-The site should consider WCAG principles, especially regarding hierarchy, navigation, and colour usage.
-
-The site should be responsive, attractive, and easy to use on various devices.
-The site should show consideration for content strategy and SEO (consider your use of meta tags and alt text).
-
 ## Who helped me when i felt blue
 
-- Kenneth Collins and Fredrik Rustad
+Kenneth Collins and Fredrik Rustad
 
 ## Do you want to take a look at my Community Science museum?
 
