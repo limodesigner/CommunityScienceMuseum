@@ -271,6 +271,7 @@ nav a:focus {
 main {
   background-color: var(--clr-neutral-100);
   padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .logo-main {
