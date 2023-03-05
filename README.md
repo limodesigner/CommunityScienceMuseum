@@ -61,7 +61,7 @@ Netlify: https://community-sciencemuseumm.netlify.app/
 
 ## Some screen shots from the process of the style tile. Logo was designed by me, same goes for the background on widescreens.
 
-Screenshot of the style tile. Logo was designed by me, same goes for the background on widescreens:<br>
+Screenshot of the style tile. Logo was designed by me, same goes for the background on widescreens. The logo spins 360 dgr on page loading:<br>
 <img src="images/styletile-screenshot.jpg">
 <br>
 <br>
