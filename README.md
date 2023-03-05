@@ -18,12 +18,13 @@ Comming soon!
 
 ## How I got there
 
+- HTML
+- CSS
+
 - Trello for planning
 - Adobe Photoshop
 - Adobe Color
 - Figma
-- HTML
-- CSS
 - VS Code
 - GitHub
 - Netlify
