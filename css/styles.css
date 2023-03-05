@@ -85,7 +85,7 @@ h2 {
   color: var(--clr-neutral-900);
   font-size: var(--fs-800);
   font-weight: 300;
-  letter-spacing: 0.10rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   padding-top: 1rem;
   margin-left: 1rem;
@@ -140,7 +140,7 @@ li {
   text-transform: uppercase;
 }
 
-/* ----------LOGO & NAVIGATION -------------- */
+/* --------LOGO & NAVIGATION -------- */
 
 @media screen and (max-width: 51.99em) {
   .desktop {
@@ -206,7 +206,7 @@ nav a:focus {
   padding: 0 0.2rem;
 }
 
-/*-------------ICONS -----------*/
+/*--------ICONS -------*/
 
 .material-icons {
   margin-bottom: 0.5rem;
@@ -262,7 +262,7 @@ nav a:focus {
   color: var(--clr-neutral-100);
 }
 
-/* ------------ CARDS & IMAGES ------------*/
+/* ------- CARDS & IMAGES -------*/
 
 main {
   background-color: var(--clr-neutral-100);
@@ -339,7 +339,7 @@ main {
   height: auto;
 }
 
-/* -----BUTTONS & ANIMATIONS -----*/
+/* --------BUTTONS & ANIMATIONS --------*/
 
 .dot {
   width: 14px;
@@ -419,7 +419,7 @@ a.button-dark {
   color: var(--clr-neutral-100);
 }
 
-/* ------------ GRID ARTICLE --------*/
+/* ------- GRID ARTICLE -------*/
 
 .grid-box {
   margin: 1rem;
@@ -431,7 +431,7 @@ a.button-dark {
   color: var(--clr-neutral-300);
 }
 
-/* --------------- AD ASIDE--------------*/
+/* ------- AD ASIDE--------*/
 
 aside {
   background-color: var(--clr-accent-700);
@@ -477,7 +477,7 @@ aside {
   margin-bottom: 3rem;
 }
 
-/* -------------FORMS --------------- */
+/* --------FORMS ---------- */
 .form__input {
   padding: 0.5rem;
   border: solid 2px var(--clr-primary-400);
@@ -488,7 +488,6 @@ fieldset {
   border: none;
 }
 
-/*forms focus styles*/
 input:focus,
 textarea:focus {
   outline: solid 1px var(--clr-primary-400);
@@ -546,7 +545,6 @@ textarea:focus {
   user-select: none;
 }
 
-/* Hide browsers default checkbox */
 .checkbox-container input {
   position: absolute;
   opacity: 0;
@@ -602,7 +600,7 @@ textarea:focus {
   margin-bottom: 2rem;
 }
 
-/* ----------- FOOTER ---------------*/
+/* ------- FOOTER --------*/
 
 .footer {
   background-color: var(--clr-neutral-900);
@@ -681,7 +679,7 @@ th {
   text-align: center;
 }
 
-/* -----------media queries----------- */
+/* -------MEDIA QUERIES-------- */
 
 @media screen and (min-width: 52em) {
   h1,
@@ -816,6 +814,5 @@ th {
 
   .ad-text {
     padding: 0 20rem;
-   
   }
 }
