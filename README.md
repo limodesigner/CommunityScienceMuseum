@@ -59,10 +59,11 @@ Kenneth Collins and Fredrik Rustad
 
 Netlify: https://community-sciencemuseumm.netlify.app/
 
-## Screen shot of the style tile. Logo was designed by me, same goes for the background on widescreens.
+## Some screen shots from the process of the style tile. Logo was designed by me, same goes for the background on widescreens.
 
+Screen shots of the style tile. Logo was designed by me, same goes for the background on widescreens:<br>
 <img src="images/styletile-screenshot.jpg">
-
-## Screen shot of the project in Figma.
-
+<br>
+<br>
+Screen shot of the project in Figma:<br>
 <img src="images/prototype-screenshot.jpg">
