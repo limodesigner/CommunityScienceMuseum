@@ -59,7 +59,7 @@ Kenneth Collins and Fredrik Rustad
 
 Netlify: https://community-sciencemuseumm.netlify.app/
 
-## Some screen shots from the process of the style tile. Logo was designed by me, same goes for the background on widescreens.
+## Some screen shots from the process
 
 Screenshot of the style tile. Logo was designed by me, same goes for the background on widescreens. The logo spins 360 dgr on page loading:<br>
 <img src="images/styletile-screenshot.jpg">
