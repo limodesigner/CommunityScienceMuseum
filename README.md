@@ -10,6 +10,8 @@ The Community Science Museum is an upcoming (but fictive), interactive museum th
 
 In this course assignment, we were given the task of developing The Community Science Museum, an interactive museum witch target audience is primary and middle school children (ages 7-15) and families with young children. The museum wanted an informative, appealing website to attract middle school pupils and their parents. The website should appeal to youngsters without pandering; it should take for granted that the audience is curious and intelligent. The website should be informative and engaging, encouraging viewers to visit the museum. The website should be responsive and easy to use on various devices.
 
+There were several requirements to be met - from project methodology, research, analysis, design and prototyping of the project, to developing it in HTML and CSS, testing, debugging and deploying.
+
 ## What was my experience and what to do next time?
 
 Comming soon!
@@ -56,3 +58,7 @@ Kenneth Collins and Fredrik Rustad
 ## Do you want to take a look at my Community Science museum?
 
 Netlify: https://community-sciencemuseumm.netlify.app/
+
+<img src="images/styletile-screenshot.jpg">
+
+<img src="images/prototype-screenshot.jpg">
