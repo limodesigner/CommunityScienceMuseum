@@ -61,9 +61,9 @@ Netlify: https://community-sciencemuseumm.netlify.app/
 
 ## Some screen shots from the process of the style tile. Logo was designed by me, same goes for the background on widescreens.
 
-Screen shots of the style tile. Logo was designed by me, same goes for the background on widescreens:<br>
+Screenshot of the style tile. Logo was designed by me, same goes for the background on widescreens:<br>
 <img src="images/styletile-screenshot.jpg">
 <br>
 <br>
-Screen shot of the project in Figma:<br>
+Screenshot of the project in Figma:<br>
 <img src="images/prototype-screenshot.jpg">
