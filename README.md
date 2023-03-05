@@ -14,7 +14,13 @@ There were several requirements to be met - from project methodology, research, 
 
 ## What was my experience and what to do next time?
 
-Comming soon!
+Throughout the process, I felt mastery as many times as I felt lost. It was a really long rollercoaster. I had some contrast issues along the way, especially with the orange colors, not complied with the WCAG standard. Figuring out when to use grid and flexbox, and how to write my nav, was also challenging - when at the same time already thinking about this in earlier stages of prototyping.
+
+Although much seemed overwhelming at first, I was extremely happy for Trello and GitHub. The tools gave me the calm I needed and gave me a good overview of the projects process right from the start. It surprised me, that the first thing I felt doing was to “set the stage” for the project, by initializing files and folders, setting up the repository on GitHub and deploy to Netlify. I will for sure continue doing this, in my coming assignments.
+
+I loved the whole process, with all the different stages. It gave me a lot of variation in the day to day workflow. What I am most proud of, are the mobile navigation and logo. I am also proud of how I handled the coding, which I have been insecure.
+
+It was a challenge getting here, but it was worth all the effort! And i loved it!
 
 ## How I got there
 
