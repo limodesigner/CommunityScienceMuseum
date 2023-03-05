@@ -73,3 +73,7 @@ Screenshot of the style tile. Logo was designed by me, same goes for the backgro
 <br>
 Screenshot of the project in Figma:<br>
 <img src="images/prototype-screenshot.jpg">
+<br>
+<br>
+Screenshot from iPad and iPhone view:
+<img src="images/csm-presentation-smallscreens.jpg">
