@@ -2,7 +2,7 @@
 
 The Community Science Museum is an upcoming (but fictive), interactive museum that aims to educate and inspire primary and middle school children, as well as families.
 
-## Noroff Frontend development - Semesterproject 1
+## Noroff Frontend development - Semesterproject 1 / Grade: A
 
 <img src="images/csm-presentation.jpg">
 
