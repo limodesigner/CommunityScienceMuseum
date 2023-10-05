@@ -77,3 +77,11 @@ Screenshot of the project in Figma:<br>
 <br>
 Screenshot from iPad and iPhone view:
 <img src="images/csm-presentation-smallscreens.jpg">
+
+## Taking a closer look and run the repo?
+
+Clone the repo and install with npm install command in you editors terminal. Run the app by npm run start.
+
+# Contact
+linda@digitaldesigner.no - let's work togheter!
+
